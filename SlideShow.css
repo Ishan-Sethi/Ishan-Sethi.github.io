@@ -8,7 +8,7 @@
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  width:50%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -65,7 +65,7 @@
 .caption-container {
   text-align: center;
   background-color: #222;
-  padding: 2px 16px;
+  padding: 10px 16px;
   color: white;
 }
 
