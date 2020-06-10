@@ -1,6 +1,9 @@
-	body { 
+	* { 
+		min-height: 100%;
+		padding:0;
 		margin:0; 
 	}
+	
 
 	.navbar {
 		overflow: hidden;
@@ -68,7 +71,7 @@
 	   margin: auto;
 	   color: white;
 	   font-size: 22px;
-	   padding: 1px 30px;
+	   padding: 20px 30px;
 	   font-family: Arial, Helvetica, sans-serif; 
 	   text-align: left; 
 
@@ -84,7 +87,13 @@
 		text-align: justify;
 		text-justify: inter-word;
 		border: 115px solid gray;
-		border-bottom-width: 15px;
+		border-bottom-width: 0px;
 		border-top-width: 15px;
 	}
 
+	.site-footer {
+		background: #828282;
+		text-align: center;
+		padding: 20px;
+		align-content: center;
+	}
