@@ -1,105 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Nav Bar from https://www.w3schools.com/howto/howto_js_dropdown.asp-->
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <!-- Nav Bar from https://www.w3schools.com/howto/howto_js_dropdown.asp-->
-    
-        <head>
-            <meta charset = "utf-8">
-            <title>Ishan's Portfolio</title>
-            <style>
-                .navbar {
-                    overflow: hidden;
-                    background-color: #333;
-                }
-    
-                .navbar a {
-                    float: left;
-                    font-size: 16px;
-                    color: white;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                }
-    
-                .dropdown {
-                    float: left;
-                    overflow: hidden;
-                }
-    
-                .dropdown .dropbtn {
-                    font-size: 16px;  
-                    border: none;
-                    outline: none;
-                    color: white;
-                    padding: 14px 16px;
-                    background-color: inherit;
-                    font-family: inherit;
-                    margin: 0;
-                }
-    
-                .navbar a:hover, .dropdown:hover .dropbtn {
-                    background-color: red;
-                }
-    
-                .dropdown-content {
-                    display: none;
-                    position: absolute;
-                    background-color: #f9f9f9;
-                    min-width: 160px;
-                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                    z-index: 1;
-                }
-    
-                .dropdown-content a {
-                    float: none;
-                    color: black;
-                    padding: 12px 16px;
-                    text-decoration: none;
-                    display: block;
-                    text-align: left;
-                }
-    
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-    
-                .dropdown:hover .dropdown-content {
-                    display: block;
-                }
-            </style>
-        </head>
-    
-    
-        <body>
-            <header>
-                <nav>
-                    <div class="navbar">
-                        <a href="../index.html">Home</a>
-                        <div class="dropdown">
-                            <button class="dropbtn">Projects 
-                              <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="#">Link 1</a>
-                              <a href="#">Link 2</a>
-                              <a href="#">Link 3</a>
-                            </div> 
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">Tutorials 
-                              <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="/tutorials/OOP.html">Object Oriented Programming</a>
-                              <a href="#">Link 2</a>
-                              <a href="#">Link 3</a>
-                            </div>
-                          </div> 
-                    </div>
-                </nav>
-            </header>
-            
-        </body>
-    </html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Ishan's Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="../design.css"> 
+	</head>
+
+
+	<body>
+		<header>
+			<nav>
+				<div class="navbar">
+					<a href="../index.html">Home</a>
+					<div class="dropdown">
+						<button class="dropbtn">Projects 
+						  <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="#">Link 1</a>
+						  <a href="#">Link 2</a>
+						  <a href="#">Link 3</a>
+						</div> 
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Tutorials 
+						  <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="OOP.html">Object Oriented Programming</a>
+						  <a href="Arrays.html">Arrays</a>
+						  <a href="ArrayList.html">Array List</a>
+						  <a href="Search.html">Search and Sort</a>
+						  <a href="#">Link 4</a>
+						  <a href="#">Link 5</a>
+						</div>
+					  </div> 
+				</div>
+			</nav>
+        </header>
+        <div class = "title">
+          <h1>Object Oriented Programming</h1>
+        </div>
+        <div class = "text">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla.
+                Sit amet nisl purus in mollis nunc sed. Dolor morbi non arcu risus. Ante metus dictum at tempor. At urna condimentum mattis pellentesque id. 
+                Proin sed libero enim sed faucibus turpis. Enim tortor at auctor urna nunc. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. 
+                Sed euismod nisi porta lorem mollis aliquam. Amet luctus venenatis lectus magna fringilla urna. Consectetur adipiscing elit duis tristique sollicitudin nibh. 
+                Erat nam at lectus urna duis convallis convallis tellus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. 
+                Molestie at elementum eu facilisis sed odio morbi quis.
+            <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla.
+                Sit amet nisl purus in mollis nunc sed. Dolor morbi non arcu risus. Ante metus dictum at tempor. At urna condimentum mattis pellentesque id. 
+                Proin sed libero enim sed faucibus turpis. Enim tortor at auctor urna nunc. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. 
+                Sed euismod nisi porta lorem mollis aliquam. Amet luctus venenatis lectus magna fringilla urna. Consectetur adipiscing elit duis tristique sollicitudin nibh. 
+                Erat nam at lectus urna duis convallis convallis tellus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. 
+                Molestie at elementum eu facilisis sed odio morbi quis.
+            <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla.
+                Sit amet nisl purus in mollis nunc sed. Dolor morbi non arcu risus. Ante metus dictum at tempor. At urna condimentum mattis pellentesque id. 
+                Proin sed libero enim sed faucibus turpis. Enim tortor at auctor urna nunc. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. 
+                Sed euismod nisi porta lorem mollis aliquam. Amet luctus venenatis lectus magna fringilla urna. Consectetur adipiscing elit duis tristique sollicitudin nibh. 
+                Erat nam at lectus urna duis convallis convallis tellus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. 
+                Molestie at elementum eu facilisis sed odio morbi quis.
+            <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla.
+                Sit amet nisl purus in mollis nunc sed. Dolor morbi non arcu risus. Ante metus dictum at tempor. At urna condimentum mattis pellentesque id. 
+                Proin sed libero enim sed faucibus turpis. Enim tortor at auctor urna nunc. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. 
+                Sed euismod nisi porta lorem mollis aliquam. Amet luctus venenatis lectus magna fringilla urna. Consectetur adipiscing elit duis tristique sollicitudin nibh. 
+                Erat nam at lectus urna duis convallis convallis tellus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. 
+                Molestie at elementum eu facilisis sed odio morbi quis.
+            <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla.
+                Sit amet nisl purus in mollis nunc sed. Dolor morbi non arcu risus. Ante metus dictum at tempor. At urna condimentum mattis pellentesque id. 
+                Proin sed libero enim sed faucibus turpis. Enim tortor at auctor urna nunc. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. 
+                Sed euismod nisi porta lorem mollis aliquam. Amet luctus venenatis lectus magna fringilla urna. Consectetur adipiscing elit duis tristique sollicitudin nibh. 
+                Erat nam at lectus urna duis convallis convallis tellus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. 
+                Molestie at elementum eu facilisis sed odio morbi quis.
+            </p>
+        </div>
+               
+	</body>
+</html>
