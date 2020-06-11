@@ -8,7 +8,7 @@
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
 }

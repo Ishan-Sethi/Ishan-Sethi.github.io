@@ -40,5 +40,34 @@
 		text-align: center;
 		padding: 10px;
 	}
+
+	.github-button {
+		position: relative;
+		display: inline;
+	}
+
+	.image-under {
+		height: 50px;
+		opacity: 1;
+	}
+
+	.image-over{
+		position: absolute;
+		left:-3px;
+		bottom: 1px;
+		height: 54px;
+		opacity: 0;
+	}
+
+	.image-under:hover {
+		opacity: 0;
+	}
+
+	.image-over:hover{
+		opacity: 1;
+	}
+	
+	
+
 	
 
