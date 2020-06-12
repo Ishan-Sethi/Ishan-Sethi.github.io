@@ -19,9 +19,9 @@
 	.title {
 	   margin: auto;
        background: linear-gradient(to left, #1cb5e0, #000046);
-	   font-size: 22px;
+	   font-size: 24px;
        color:#FFFFFF;
-	   padding: 20px 30px;
+	   padding: 30px 30px;
 	   font-family: Arial, Helvetica, sans-serif; 
 	   text-align: left; 
 
@@ -35,7 +35,7 @@
 		font-style: normal;
 		text-align: justify;
 		text-justify: inter-word;
-		border: 115px solid gray;
+		border: 115px solid #DDDDDD;
 		border-bottom-width: 75px;
 		border-top-width: 15px;
 	}
