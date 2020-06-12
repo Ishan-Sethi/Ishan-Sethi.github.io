@@ -1,0 +1,45 @@
+	footer {
+  		position: fixed;
+  		bottom: 0;
+		width: 100%;
+	}
+
+	.site-footer {
+		background: none;
+		text-align: center;
+        
+		padding: 10px;
+		opacity: 0.2;
+        transition:opacity 0.8s;
+	}
+
+	.site-footer:hover {
+		opacity: 1;
+	}
+
+	.github-button {
+		position: relative;
+		display: inline;
+        transition:opacity 0.5s;
+	}
+
+	.image-under {
+		height: 50px;
+		opacity: 1;
+	}
+
+	.image-over{
+		position: absolute;
+		left:-3px;
+		bottom: 1px;
+		height: 54px;
+		opacity: 0;
+	}
+
+	.image-under:hover {
+		opacity: 0;
+	}
+
+	.image-over:hover{
+		opacity: 1;
+	}

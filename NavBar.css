@@ -1,7 +1,7 @@
 /*Nav Bar from https://www.w3schools.com/howto/howto_js_dropdown.asp*/
 	.navbar {
 		overflow: hidden;
-		background-color: #333333;
+        background: linear-gradient(to left, #1cb5e0, #000046);
 		font-family: Arial, Helvetica, sans-serif;
 	}
 
@@ -30,7 +30,7 @@
 	}
 
 	.navbar a:hover, .dropdown:hover .dropbtn {
-		background-color: red;
+		background-color: darkblue;
 	}
 
 	.dropdown-content {

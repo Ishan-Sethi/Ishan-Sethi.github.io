@@ -2,13 +2,25 @@
 		margin:0; 
 		padding:0;
 	}
-	
+    
+    .fade { 
+            animation: fadeIn; 
+            animation-duration: 2s; 
+        } 
+        @keyframes fadeIn { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
 
 	.title {
-	   background-color: #333333;
 	   margin: auto;
-	   color: white;
+       background: linear-gradient(to left, #1cb5e0, #000046);
 	   font-size: 22px;
+       color:#FFFFFF;
 	   padding: 20px 30px;
 	   font-family: Arial, Helvetica, sans-serif; 
 	   text-align: left; 
@@ -18,55 +30,27 @@
 	.text {
 		background-color: white;
 		color: black;
-		font-size: 16px;
 		padding: 20px 70px;
 		font-family: Arial, Helvetica, sans-serif;  
 		font-style: normal;
 		text-align: justify;
 		text-justify: inter-word;
 		border: 115px solid gray;
-		border-bottom-width: 0px;
+		border-bottom-width: 75px;
 		border-top-width: 15px;
 	}
 
-	footer {
-  		position: sticky;
-  		bottom: 0;
-		width: 100%;
-		opacity: 0.9;
+	.text h1 {
+		padding: 15px 0px 10px;
+		font-size: 40px;
 	}
+    
+    .text p {
+        padding: 0px 0px 15px;
+        font-size: 18px;
+    }
 
-	.site-footer {
-		background: #A2A2A2;
-		text-align: center;
-		padding: 10px;
-	}
 
-	.github-button {
-		position: relative;
-		display: inline;
-	}
-
-	.image-under {
-		height: 50px;
-		opacity: 1;
-	}
-
-	.image-over{
-		position: absolute;
-		left:-3px;
-		bottom: 1px;
-		height: 54px;
-		opacity: 0;
-	}
-
-	.image-under:hover {
-		opacity: 0;
-	}
-
-	.image-over:hover{
-		opacity: 1;
-	}
 	
 	
 
