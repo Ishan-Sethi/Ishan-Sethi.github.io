@@ -4,7 +4,7 @@
 	}
 
 	.fade { 
-		position:relative;
+		position: relative;
 		animation: fadeIn; 
 		animation-duration: 1s; 
 	} 
@@ -17,6 +17,26 @@
 			bottom: 0px;
 			opacity: 1; 
 		} 
+	} 
+
+	.fade2 { 
+		position: relative;
+		font-family: Monaco, Lucida Console, monospace; 
+		opacity: 0;
+		animation: fadeIn;
+		animation-fill-mode: forwards;
+		animation-duration: 1s; 
+		animation-delay:5.6s
+	} 
+
+	.fade3 { 
+		position: relative;
+		font-family: Monaco, Lucida Console, monospace; 
+		opacity: 0;
+		animation: fadeIn;
+		animation-fill-mode: forwards;
+		animation-duration: 1s; 
+		animation-delay:6.6s
 	} 
 
 	.title {
@@ -52,3 +72,18 @@
         padding: 0px 0px 15px;
         font-size: 18px;
     }
+
+	.home{
+		background-color: white;
+		color: black;
+		padding: 20px 70px;
+		font-family: Arial, Helvetica, sans-serif;  
+		font-style: normal;
+		text-align: justify;
+		text-justify: inter-word;
+		border: 115px solid inherit;
+		border-bottom-width: 75px;
+		border-top-width: 15px;
+		
+	}
+
