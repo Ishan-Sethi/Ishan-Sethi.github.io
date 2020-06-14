@@ -94,12 +94,25 @@
         padding: 5px 0px;
     }
 
-
 .sidebar {
     float:right;
-    width: 10vw;
+    padding: 15px 20px 30px;
     position:relative;
-    background:#000000;
+    background:#D0D0D0;
+	display:block;
+	margin:0 auto;
+	
+}
+.sidebar ul {
+	list-style: none
+}
+.sidebar li {
+	padding: 5px 0px;
+}
+
+.sidebar img {
+	position:relative;
+	top:24px;
 }
     
 
