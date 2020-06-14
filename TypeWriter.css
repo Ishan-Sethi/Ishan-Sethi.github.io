@@ -10,7 +10,7 @@
 }
 
 .css-typing h1:nth-child(1) {
-  width: 24em;
+  width: 25em;
   -webkit-animation: type 3s steps(80, end);
   animation: type 3s steps(80, end);
   -webkit-animation-fill-mode: forwards;
