@@ -45,7 +45,35 @@
 			<h1>Arrays</h1>
 		</div>
 		<div class="text">
-			
+            <div class="fade">
+                <div id="#WhatIsAnArry">
+                    <h1>What is an Array?</h1>
+                    <p>
+                        An array is a type of data structure in Computer Programming, that holds a collection of data. Different coding languages handle arrays in different ways, but this tutorial will mainly be about how arrays work in Java. Every element in an array must be off the same type, either a primitive data type (char, int, double, etc.), or an object (String, Colors, etc.). When you first declare an array, every value in the array is set to it's default value. Doubles, ints and chars are set to 0, booleans are set to false, and Strings are any objects are set to null. Here is syntax on how to declare, and initialize an array:
+                    </p>
+                    <div class="code">
+                        <p>
+                            int[] intArr;    // Declaring a new integer Array <br>
+                            intArr = new int[4]; // Initializes integer array of length 4 <br>
+                            String[] objectArr = new String[4]; // Declaring, and initializing an array in the same line
+                        </p>
+                    </div>
+                    <p></p>
+                    <p>
+                        There are two ways to store data in an array, you can set up the entire array when initializing it, or access each individual element and change it. Every value in an array is stored at a particular index, starting at 0 and going to the length of the array minus one. This can be somewhat confusing to new programmers, as the first element in every array is stored at index 0, but we humans normally start counting from 1. Here is an example of how to put data in an array:
+                    </p>
+                    <div class="code">
+                        <p>
+                            String[] names = {"Ishan", "Ms. Krasteva"}; // Automatically sets length to 2<br>
+                            int[] intArr new int[4]; // Initializes integer array of length 4 <br>
+                            intArr[0] = 2; // Sets the value at index 0 (first element) to be 2<br> 
+                            intArr[1] = -180; // Sets the value at index 1 (second element) to be -180
+                        </p>
+                    </div>
+                    <p></p>
+                    <p>For more information regarding arrays check out the <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html" target="_blank">Java Reference</a> or this <a href="https://www.geeksforgeeks.org/arrays-in-java/" target="_blank">GeekForGeeks article</a></p>
+                </div>
+            </div>
 		</div>
 	</body>
 </html>
