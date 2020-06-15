@@ -175,7 +175,7 @@
                 <div id="WhatIsEncapsulation#">
                     <h1>What is Encapsulation?</h1>
                     <p>
-                        Encapsulation is method of protecting your local variables in a class. But before we cover Encapsultaion, we have to talk about variable and method access. So far in this tutorial, we've only used public methods and variables, but there are actually four different <b>Access Modifiers</b>. They are:
+                        Encapsulation, or data hiding, is method of protecting your local variables in a class. But before we cover Encapsultaion, we have to talk about variable and method access. So far in this tutorial, we've only used public methods and variables, but there are actually four different <b>Access Modifiers</b>. They are:
                     </p>
                     <ol>
                         <li>Default (none)</li>
@@ -186,14 +186,14 @@
                     <p> <br>
                         These modifers change what variable can be seen, and changed from different classes. Here is a full table of what each Acess Modifier does:
                     </p>
-                    <table class="tg">
+                    <table class="tg" style="align-content: center">
                         <thead>
                             <tr>
-                            <th class="tg-mdby"></th>
-                            <th class="tg-xblm">default</th>
-                            <th class="tg-xblm">public</th>
-                            <th class="tg-xblm"><span style="font-weight:400;font-style:normal">private</span></th>
-                            <th class="tg-xblm">protected</th>
+                            <th class="tg-mdby">Visible In</th>
+                            <th class="tg-mdby">default</th>
+                            <th class="tg-mdby">public</th>
+                            <th class="tg-mdby"><span style="font-weight:400;font-style:normal">private</span></th>
+                            <th class="tg-mdby">protected</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -234,6 +234,33 @@
                             </tr>
                         </tbody>
                     </table>
+                    <p> <br>
+                        Although there are certain exceptions, we typically want to make most of our Class variables private. This is done for security reasons, so that both the user and anyone with some malicious intent can't access the data that is stored inside of a class. If we were to set every value to be public, then anyone would be able to see, and change the values of our class. However, this presents us with a problem as sometimes we also need to be able to change a class' values from outside of it. They way we get around this is through <b>Accessor</b> and <b>Mutator Methods</b>. which allow us to safely access, and change variables. Here is the Pet class re-written to use encapsulation.
+                    </p>
+                    <div class="code">
+                        <p>
+                            &nbsp;public class Pet {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private String name;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private int age;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Pet (String n, int a) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name = n;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age = a;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public String getName () {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return name;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void setName (String n) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name = n;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public int getAge () {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return age;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void setAge (int a) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age = a;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
