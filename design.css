@@ -124,6 +124,7 @@ body {
         font-size: 50px;
         padding: 5px 0px;
         margin-right: -120px;
+        text-align: left;
     }
     
     .home p {
@@ -139,6 +140,7 @@ body {
     }
 
     .sidebar {
+        border-radius: 15px;
         height: 280px;
         width: 260px;
         position:relative;
