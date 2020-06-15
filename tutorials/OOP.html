@@ -124,7 +124,52 @@
                 <div id="#WhyUseOOP">
                     <h1>Why Use OOP?</h1>
                     <p>
-                        Simply put, OOP can make programming 
+                        Simply put, OOP can make programming much more effecient, through code re-usability and inheritence. Inheritence allows a class to pass all of its values, and methods to another class. A <b>Super Class</b> is a class that gets inherited by another <b>Sub Class</b>, and the sub class can add, or change its own methods and variables. Using this method, it allows us to re-use the same code, instead of having to re-write it with subtle changes. Here is an example using Cats and Dogs:
+                    </p>
+                    <div class="code">
+                        <p>
+                            &nbsp;public class Pet {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public String name;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public int age;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Pet (String n, int a) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name = n;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age = a;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public String speak () {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return name + " said: ";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;}
+                        </p>
+                    </div>
+                    <p></p>
+                    <div class="code">
+                        <p>
+                            &nbsp;public class Dog extends {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Pet (String n, int a) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(n, a);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public String speak () {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return super.speak() + "woof!";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;}
+                        </p>
+                    </div>
+                    <p></p>
+                    <div class="code">
+                        <p>
+                            &nbsp;public class Cat extends {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Pet (String n, int a) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(n, a);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public String speak () {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return super.speak() + "meow!";<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;}
+                        </p>
+                    </div>
+                    
+                    <p> <br>
+                        In this
                     </p>
                 </div>
             </div>
