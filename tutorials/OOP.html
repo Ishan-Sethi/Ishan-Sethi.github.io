@@ -169,8 +169,71 @@
                     </div>
                     
                     <p> <br>
-                        In this
+                        In this case, instead of rewriting all the variables from the Pet class in the Dog and Cat class, we simply make the subclasses of Pet. The super() call in the constructor allows us to call the constructor from the superclass. Then, in the methods we want to overwrite, or make any changes to we can once again call super.speak(), then add on our additions. Now if we wanted to make a change to the speak() method, all we need to do is edit it in the parent class. Inheritance is a great feature in Object Oriented Programming, which can save alot of time when working with many classes.
                     </p>
+                </div>
+                <div id="WhatIsEncapsulation#">
+                    <h1>What is Encapsulation?</h1>
+                    <p>
+                        Encapsulation is method of protecting your local variables in a class. But before we cover Encapsultaion, we have to talk about variable and method access. So far in this tutorial, we've only used public methods and variables, but there are actually four different <b>Access Modifiers</b>. They are:
+                    </p>
+                    <ol>
+                        <li>Default (none)</li>
+                        <li>Public</li>
+                        <li>Private</li>
+                        <li>Protected</li>
+                    </ol>
+                    <p> <br>
+                        These modifers change what variable can be seen, and changed from different classes. Here is a full table of what each Acess Modifier does:
+                    </p>
+                    <table class="tg">
+                        <thead>
+                            <tr>
+                            <th class="tg-mdby"></th>
+                            <th class="tg-xblm">default</th>
+                            <th class="tg-xblm">public</th>
+                            <th class="tg-xblm"><span style="font-weight:400;font-style:normal">private</span></th>
+                            <th class="tg-xblm">protected</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tg-cji8">Same Class</td>
+                                <td class="tg-cji8">Yes</td>
+                                <td class="tg-cji8">Yes</td>
+                                <td class="tg-cji8">Yes</td>
+                                <td class="tg-cji8">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-8u7g">Same Package <br>Subclass</td>
+                                <td class="tg-8u7g">Yes</td>
+                                <td class="tg-8u7g">Yes</td>
+                                <td class="tg-8u7g"><span style="font-weight:400;font-style:normal">No</span></td>
+                                <td class="tg-8u7g">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-cji8">Same Package <br>Non-Subclass</td>
+                                <td class="tg-cji8">Yes</td>
+                                <td class="tg-cji8">Yes</td>
+                                <td class="tg-cji8"><span style="font-weight:400;font-style:normal">No</span></td>
+                                <td class="tg-cji8">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-8u7g">Different Package<br>Subclass</td>
+                                <td class="tg-8u7g"><span style="font-weight:400;font-style:normal">No</span></td>
+                                <td class="tg-8u7g">Yes</td>
+                                <td class="tg-8u7g"><span style="font-weight:400;font-style:normal">No</span></td>
+                                <td class="tg-8u7g">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-cji8">Different Package <br>Non-Subclass</td>
+                                <td class="tg-cji8"><span style="font-weight:400;font-style:normal">No</span></td>
+                                <td class="tg-cji8">Yes</td>
+                                <td class="tg-cji8"><span style="font-weight:400;font-style:normal">No</span></td>
+                                <td class="tg-cji8">No</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
