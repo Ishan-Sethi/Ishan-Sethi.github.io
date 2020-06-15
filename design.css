@@ -104,13 +104,14 @@ body {
         font-size: 20px;
         padding: 15px;
         line-height: 1.3;
+		text-align: left; 
     }
 
 	.home{
         display: inline-block;
         width: 100%;
         margin:auto;
-        padding: 50px;
+        padding: 50px 60px;
         bottom:0;
         top: 26vw;
 		color: black;

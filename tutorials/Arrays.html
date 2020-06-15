@@ -46,7 +46,7 @@
 		</div>
 		<div class="text">
             <div class="fade">
-                <div id="#WhatIsAnArry">
+                <div id="WhatIsAnArray">
                     <h1>What is an Array?</h1>
                     <p>
                         An array is a type of data structure in Computer Programming, that holds a collection of data. Different coding languages handle arrays in different ways, but this tutorial will mainly be about how arrays work in Java. Every element in an array must be off the same type, either a primitive data type (char, int, double, etc.), or an object (String, Colors, etc.). When you first declare an array, every value in the array is set to it's default value. Doubles, ints and chars are set to 0, booleans are set to false, and Strings are any objects are set to null. Here is syntax on how to declare, and initialize an array:
@@ -73,6 +73,62 @@
                     <p></p>
                     <p>For more information regarding arrays check out the <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html" target="_blank">Java Reference</a> or this <a href="https://www.geeksforgeeks.org/arrays-in-java/" target="_blank">GeekForGeeks article</a></p>
                 </div>
+				<div id="WhatIsAnArrayList">
+					 <h1>What is an ArrayList?</h1>
+					<p>
+						Arrays can make coding in java alot more effecient when working with a fixed amount of data, but they also have some disadvantages. For one, Arrays aren't flexible length, meaning once you initialize it you cannot resize it to be larger then its original length. This is where an ArrayList comes in. An ArrayList will automatically adjust its size to fit all the elements you must store. You can add, remove and insert elements at any point in an ArrayList. Here is an example on how to use an ArrayList.
+					</p>
+					<div class="code">
+						<p>
+							import java.util.ArrayList;<br><br>
+							ArrayList&lt;Integer&gt; num = new ArrayList&lt;Integer&gt;(); <br>
+							num.add(5); // Adds 5 as the first element<br>
+							num.add(2); // Adds 2 as the second element<br>
+							num.add(0, 2); // Inserts 2 at index 0, pushing everything else back <br>
+							num.set(3, 10); // changes index 3 to be 10 <br>
+							num.remove(0); // removes the element at index 0<br>
+							// Outputting every int in num <br>
+							for (int i = 0; i &lt; num.size(); i++) {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(num.get(i));<br>   
+							}
+						</p>
+					</div>
+					<p></p>
+					<p>
+						ArrayLists can only store objects, not primitive data types, which is why we used the Integer class instead of int. However, when we add a new element we don't need to create a new Integer() object because Java will automatically cast the int literal to type Integer() (<b>Please Note:</b> this only applies to primitive data types and Strings, not any other objects). To access an elemnt in an ArrayList, we use the ArrayList.get() method and specify which index we want to access, similar to an Array. To insert an item at a specific index, you just have to specify the index in the ArrayList.add() method. ArrayLists are much easier to use, but they also come at a cost. ArrayLists are much more expensive, and take up more memory than regular Arrays.
+					</p>
+					<p>For more information regarding ArrayLists check out the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html" target="_blank">Java Reference</a> or this <a href="https://www.geeksforgeeks.org/arraylist-in-java/" target="_blank">GeekForGeeks article</a></p>
+				</div>
+				<div id="WhyUseArrays">
+					<h1>Why Should we use Arrays/ArrayLists?</h1>
+					<p>
+						When working with basically any quantity of date larger then a single variable, Arrays are always faster to use, and more efficient to design software around. For example, lets say we are programming a video game, and once a player's score reaches 100 points, we reset their score to 0. If we had 100 players, we would need 100 variables to store all of their points, and 100 if statements to check.
+					</p>
+					<div class="code">
+						<p>
+							if(score1 == 100)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;score1 = 0;<br>
+							if(score2 == 100)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;score2 = 0;<br>
+							if(score3 == 100)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;score4 = 0;<br>
+							// ...<br>
+							if(score99 == 100)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;score99 = 0;
+						</p>
+					</div>
+					<p></p>
+					<p>
+						Using an array to hold thoose scores cuts the code down from 200 lines all the way down to 3:
+					</p>
+					<div class="code">
+						<p>
+							for (int i = 0; i &lt; scores.length; i++) <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;if (scores[i] == 100)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scores[i] = 0;<br>
+						</p>
+					</div>
+				</div>
             </div>
 		</div>
 	</body>
