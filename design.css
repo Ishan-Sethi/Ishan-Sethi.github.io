@@ -56,12 +56,12 @@ body {
 	.text {
 		background-color: white;
 		color: black;
-		padding: 20px 70px;
+		padding: 20px 100px;
 		font-family: Arial, Helvetica, sans-serif;  
 		font-style: normal;
 		text-align: justify;
 		text-justify: inter-word;
-		border: 115px solid #E0E0E0;
+		border: 160px solid #E0E0E0;
 		border-bottom-width: 75px;
 		border-top-width: 15px;
 	}
@@ -73,13 +73,27 @@ body {
     
     .text p {
         padding: 0px 0px 15px;
-        font-size: 18px;
+        font-size: 20px;
+    }
+    
+    .text ul {
+        font-size: 20px;
+        margin-left: 3em;
+    }
+
+    .code {
+        border-radius: 5px;
+        background-color:#262626;
+        color:#008C0F;
+        font-family: Monaco, Lucida Console, monospace; 
+        font-size: 20px;
+        padding: 15px;
+        line-height: 1.3;
     }
 
 	.home{
         display: inline-block;
         width: 100%;
-        
         margin:auto;
         padding: 50px;
         bottom:0;
