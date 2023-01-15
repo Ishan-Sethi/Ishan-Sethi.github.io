@@ -1,94 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset = "utf-8">
-		<title>Ishan's Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="design.css">
-		<link rel="stylesheet" type="text/css" href="NavBar.css">
-		<link rel="stylesheet" type="text/css" href="TypeWriter.css">
-        <link rel="stylesheet" type="text/css" href="SideBar.css">
-		<link rel="stylesheet" type="text/css" href="Footer.css">
-		<link rel="icon" href="Images/assets/favicon.ico">
-	</head>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <title>iPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	<body>
-		<header>
-			<nav>
-				<div class="navbar">
-					<a href="index.html">
-						<img src="Images/assets/Logo.png" class="logo">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home
-					</a>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-					<div class="dropdown">
-						<button class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>
-						<div class="dropdown-content">
-						  <a href="projects/ics203.html">Towers of Hanoi</a>
-						  <a href="projects/ics3u3.html">Snakes and Ladders</a>
-				          <a href="projects/quick-sort.html">Quick Sort</a>
-                          <a href="projects/ics4u0.html">Bus Conductor</a>
-				  		</div>
-				  	</div>
-					<div class="dropdown">
-						<button class="dropbtn">Tutorials
-						  <i class="fa fa-caret-down"></i>
-						</button>
-						<div class="dropdown-content">
-						  <a href="tutorials/OOP.html">Object Oriented Programming</a>
-						  <a href="tutorials/Arrays.html">Arrays and ArrayLists</a>
-						  <a href="tutorials/Search.html">Search and Sort</a>
-						</div>
-					  </div>
-				</div>
-			</nav>
-		</header>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-		<div class = "title" style="padding: 30px 30px 40px;">
-			<div class="fade">
-				<div class="css-typing">
-					<h1> public static void main (String[] args) &#123 </h1>
-					<h1> &nbsp;&nbsp;&nbsp;System.out.println("Hello World!")&#59; </h1>
-					<h1> &#125</h1>
-				</div>
-			</div>
-			<div class="fade2" style="padding: 40px 30px 0px; font-size: 2.5vw; font-family: Monaco, Lucida Console, monospace;">
-				<h1>Hello World!</h1>
-			</div>
-		</div>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <div class="home">
-            <div class="fade2">
-                <div class="description">
-                    <h1>Welcome to My Website</h1>
-                    <p> My name is Ishan Sethi, and I'm currently a Grade 12 student in the MaCS program at William Lyon Mackenzie CI. I have a passion for Computer Science, and I mainly program in Java. This website is a collection of my work, and knowledge about coding.
-                    </p>
-                </div>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
 
-                <div class="sidebar">
-					<p>Find me at:</p>
-					<ul>
-						<li>
-							<a href="mailto:ishansethi2004@gmail.com" target="_blank"><img src="Images/assets/EmailLogo.png" style="height:50px; margin-top: -20px;" alt="Email"></a>
-							&nbsp;ishansethi2004@gmail.com
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-						</li>
-						<li>
-							<a href="https://www.instagram.com/_ishan.sethi_/" target="_blank"><img src="Images/assets/InstagramLogoTop.png" style="height:50px;" alt="Instagram"></a>
-							@_ishan.sethi_
-						</li>
-						<li>
-							<a href="https://github.com/Ishan-Sethi" target="_blank"><img src="Images/assets/GithubLogo.png" style="height:50px;" alt="Github"></a>
-							&nbsp;Ishan-Sethi
-						</li>
-						<li>
-							<img src="Images/assets/DiscordLogo.png" style="width:51px;" alt="Github">
-								&nbsp;IshanSethi#9769
-						</li>
-					</ul>
-        		</div>
-		    </div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Ishan Sethi</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/Ishan-Sethi" class="github" target="_blank"><i class="bx bxl-github" ></i></a>
+          <a href="https://www.linkedin.com/in/ishan-sethi-791243160/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="mailto:ishansethi@hotmail.com" class="mailbox" target="_blank"><i class="bx bx-envelope"></i></a>
         </div>
-	</body>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Ishan Sethi</h1>
+      <p>I'm <span class="typed" data-typed-items="a CS Student, a Developer, seeking internships"></span></p>
+    </div>
+  </section>
+
+  <main id="main" style="paddring-right: 10px">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+        <div class="section-title" style="padding-bottom: 0">
+          <h2>About</h2>
+          <p class="pb-1">Welcome to my website! My name is Ishan Sethi and I am a first year Computer Science student studying at the University of Waterloo. This portfolio contains all of my experience, skills, and projects I've completed throughout my coding journey so feel free to have a look around!</p>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <div class="section-title">
+          <h2 style="margin-bottom: 0">Resume</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Ishan Sethi</h4>
+              <p><em>Innovative and dedicated aspiring full-stack developer with a strong foundation in mutliple programming languages including Java, Python, Javascript &amp; C++. Excellent teamwork, interpersonal and communication skills with experience collaborating with others.</em></p>
+              <ul>
+                <li>Toronto/Waterloo, ON</li>
+                <li>(647) 554-1274</li>
+                <li>ishansethi@hotmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Computer Science Co-op</h4>
+              <h5>Expected 2027</h5>
+              <p style="margin-bottom 0"><em>Univeristy of Waterloo, Waterloo, ON</em></p>
+              <ul>
+                <li><b>GPA</b>: 3.70</li>
+                <li><b>Relevant Coursework</b>: Designing Functional Programs, Algorithm Design and Data Abstraction, Tools and Techniques for Software Development, Linear Algebra, Calculus 1 &amp; 2</li>
+                <li><b>Awards &amp; Honours</b>: President's Scholarship of Distinction, Hack the North Facebook API 2nd place, Hypatia Contest Honour Roll - Top 5%, Euclid Mathematics Competition Distinction - Top 10%, Canadian Computing Contest Distinction - Top 25%</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+              <h4>Web Developer</h4>
+              <h5>2020 - Present</h5>
+              <p><em>Freelance, Toronto, ON </em></p>
+              <ul>
+                <li>Designed dynamic mobile-first websites using HTML, CSS, Javascript, and Bootstrap for local businesses including a pediatrician’s office, mobile store, and beauty salon</li>
+                <li>Learned many entrepreneurial skills in networking, negotiation and customer satisfaction</li>
+                <li>Increased digital presence and foot traffic for those businesses</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Sales Associate</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Bell Canada, Toronto, ON</em></p>
+              <ul>
+                <li>Assist customers in finding mobile products and plans perfectly designed to fit their needs</li>
+                <li>Answered customer questions and reported issues in person or by phone</li>
+                <li>Stock, replenish, and organize the store inventory with accuracy and efficiency</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container mx-auto" data-aos="fade-up" data-aos-delay="50">
+            <div class="text-center">
+              <a target="_blank" href="/IshanSethi.pdf"><button type="button" class="btn btn-primary btn-lg">View Full Resume</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C++ <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio" style="padding-bottom: 0">
+      <div class="container">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/auricular.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/auricular.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Auricular.ai"><i class="bx bx-plus"></i></a>
+                <a href="https://devpost.com/software/auricular-ai" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/handpong.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/handpong.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hand Pong"><i class="bx bx-plus"></i></a>
+                <a href="https://devpost.com/software/handpong" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/bus-conductor.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/bus-conductor.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bus Conductor"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/MuteMini/ICS4U0-ISP" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/handwritten-numbers.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/handwritten-numbers.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Handwritten Numbers Model"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/Ishan-Sethi/Handwriting-Numbers-Recognition" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+        <div class="section-title mb-3">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Ishan I appreciate your help in making my website. I had no idea how to start and you made impossible possible through your expert knowledge and capabilities. I would highly recommend you to everyone for their website design and development.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/dr-zakhary.jpeg" class="testimonial-img" alt="">
+                <h3>Dr. Gamal Zakhary</h3>
+                <h4>Pediatrician</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Ishan is very hardworking and punctual. He used to arrive early every single day. He observed and followed all my instructions precisely and thoroughly. It was a pleasure to have you at our work space.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/bell-manager.jpg" class="testimonial-img" alt="">
+                <h3>Rinkie Dandoa</h3>
+                <h4>Bell Canada Manager</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Very interactive and beautifully designed website. It helped me a lot in reaching my clients.  My clients love my website as it is less confusing and they can get the information and book the appointment very easily.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/beauty-parlour.jpg" class="testimonial-img" alt="">
+                <h3>Puja Sahini</h3>
+                <h4>Remould Beauty Parlour Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p class="pb-4">If you have any concerns, questions, or further employment oppourtunities feel free to reach out me!</p>
+        </div>
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="info">
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p style="margin-bottom: 0; padding-bottom: 0">ishansethi@hotmail.com</p>
+                <p>isethi@uwaterloo.ca</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="info">
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>(647) 554-1274</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
